@@ -1,0 +1,61 @@
+:root{
+    --radius:5px;
+    --padding:10px;
+}
+.container{
+    display: grid;
+    border: 1 px solid black;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+    height: 100vh;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "content1 content2 content2 content4"
+                        " content1 content3 content3 content4"
+                        "content1 content5 content6 content4"
+                        " content1 content7 content7 content4";
+
+}
+.content1{
+   background-color: aquamarine;
+     border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content1;
+}
+.content2{
+    background-color: rgb(105, 105, 217);
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content2;
+}
+.content3{
+    background-color: green;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content3;
+}
+.content4{
+    background-color: rgb(136, 136, 28);
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content4;
+}
+.content5{
+    background-color: rgb(133, 123, 105);
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content5;
+}
+.content6{
+    background-color: rgb(16, 124, 164);
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content6;
+}
+.content7{
+    background-color: rgb(49, 156, 206);
+    border-radius: var(--radius);
+    padding: var(--padding);
+    grid-area: content7;
+}
