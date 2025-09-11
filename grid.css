@@ -8,6 +8,7 @@
     font-weight: 800;
     text-transform: capitalize;
     text-align: center;
+    gap: 10px;
     height: 100vh;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -22,30 +23,72 @@
      border-radius: var(--radius);
     padding: var(--padding);
     grid-area: content1;
+    display: grid;
+    row-gap: 3px;
+     justify-content: center;
+     align-content:center ;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: "nested1 nested1 nested1"
+                          "nested2 nested3 nested4";
+                           border: 1px solid blue;
+                          
+}
+#nested1{
+    background-color: white;
+    height: 80px;
+    width: 20px;
+    grid-area: nested1;
+    margin: 0;
+}
+#nested2{
+    background-color: white;
+     height: 80px;
+    width: 5px;
+    margin: 0;
+    grid-area: nested2;
+}
+#nested3{
+    background-color: white;
+     height: 80px;
+    width: 5px;
+    margin: 0;
+    grid-area: nested3;
+}
+#nested4{
+    background-color: white;
+     height: 80px;
+    width: 5px;
+    margin: 0;
+    grid-area: nested4;
 }
 .content2{
     background-color: rgb(105, 105, 217);
     border-radius: var(--radius);
     padding: var(--padding);
     grid-area: content2;
+     border: 1px solid rgb(142, 142, 148);
 }
 .content3{
     background-color: green;
     border-radius: var(--radius);
     padding: var(--padding);
     grid-area: content3;
+     border: 1px solid rgb(142, 142, 148)
 }
 .content4{
     background-color: rgb(136, 136, 28);
     border-radius: var(--radius);
     padding: var(--padding);
     grid-area: content4;
+     border: 1px solid rgb(61, 61, 218)
 }
 .content5{
     background-color: rgb(133, 123, 105);
     border-radius: var(--radius);
     padding: var(--padding);
     grid-area: content5;
+     border: 1px solid rgb(142, 142, 148)
 }
 .content6{
     background-color: rgb(16, 124, 164);
